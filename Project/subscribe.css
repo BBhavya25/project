@@ -1,0 +1,158 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1b1b1b;
+    color: white;
+}
+.logo-container img{
+    height: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #222222, #121212); /* Replacing var(--secondary-color) and var(--background-dark) */
+    z-index: 1000;
+}
+
+.logo-container img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff; /* Replacing var(--text-color) */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, background 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #121212; /* Replacing var(--background-dark) */
+    background-color: #f39c12; /* Replacing var(--hover-color) */
+}
+
+.navbar-right .btn {
+    color: #ffffff; /* Replacing var(--text-color) */
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 5px 15px;
+    border: 1px solid #ffffff; /* Replacing var(--text-color) */
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar-right .btn:hover {
+    background: #f39c12; /* Replacing var(--hover-color) */
+    color: #121212; /* Replacing var(--background-dark) */
+}
+
+
+
+h1{
+    margin-top: 90px;
+    justify-content: center;
+    margin-left: 630px;
+}
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan-card {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: orange;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge.green {
+    background: #26c281;
+}
+
+.badge.save {
+    background: #f4d03f;
+}
+
+.plan-card h2 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    color: #ffa500;
+}
+
+.plan-card p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.plan-card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: white;
+}
+
+.plan-card .strike {
+    text-decoration: line-through;
+    color: #666;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.subscribe-btn {
+    display: block;
+    margin: 10px 0 0;
+    padding: 10px 20px;
+    background: #ffa500;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.subscribe-btn:hover {
+    background: #e67e22;
+}
